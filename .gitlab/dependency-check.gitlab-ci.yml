@@ -21,7 +21,7 @@ dependency-check:
     DEPENDENCY_SUPPRESSION: "suppression.xml"
   extends: .security
   image:
-    name: owasp/dependency-check:${DEPENDENCY_VERSION}
+    name: owasp/dependency-check-action:${DEPENDENCY_VERSION}
     entrypoint: [""]
   before_script:
     - mkdir -p reports &>/dev/null || true
